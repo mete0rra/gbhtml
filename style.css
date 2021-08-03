@@ -1,4 +1,378 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+.body {
+  width: 1600px;
+}
+
+.header .top__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  width: 59px;
+  height: 51px;
+  margin-left: 227px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo__search .logo__text {
+  padding-left: 13px;
+  padding-right: 37px;
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.header .logo__search .logo__text .logo__text__D {
+  font-weight: 900;
+  color: #f16d7f;
+}
+
+.header .logo__search .menu__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .logo__search .menu__search .browse__button {
+  width: 87px;
+  height: 38px;
+  background-color: #cdcdcc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
+  background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+  border: 1px solid #e6e6e6;
+  border-radius: 3px 0px 0px 3px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.header .logo__search .menu__search .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 38px;
+}
+
+.header .logo__search .menu__search .search .search__input {
+  width: 317px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 3px 3px 0px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #a4a4a4;
+  padding-left: 16px;
+}
+
+.header .logo__search .menu__search .search .search__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 27px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 3px 3px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .cart__acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 26px;
+}
+
+.header .cart__acc .cart {
+  width: 32px;
+  height: 29px;
+  padding-right: 26px;
+}
+
+.header .cart__acc .acc__menu {
+  margin-right: 231px;
+}
+
+.header .cart__acc .acc__menu .dropbtn {
+  border: none;
+  width: 130px;
+  height: 38px;
+  background-color: #f16d7f;
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.header .cart__acc .acc__menu .acc__content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.header .cart__acc .acc__menu .acc__link {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header .nav__bar .nav__text {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  padding-top: 19px;
+  text-align: center;
+  word-spacing: 35px;
+}
+
+.content {
+  padding-top: 24px;
+}
+
+.content .brand__banner {
+  height: 665px;
+  background-image: url(images/brand_banner_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content .brand__banner__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 230px;
+  padding-top: 276px;
+}
+
+.content .vertline {
+  margin-right: 12px;
+  width: 12px;
+  height: 92px;
+  background-color: #f16d7f;
+}
+
+.content .text__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1px;
+  line-height: 0.8;
+}
+
+.content .text__heading {
+  font-family: Lato;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.content .text__banner {
+  font-family: Lato;
+  font-size: 40px;
+}
+
+.content .text__fashion {
+  font-family: Lato;
+  font-size: 40px;
+  color: #f16d7f;
+}
+
+.content .card__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .card__block .card__block__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 230px;
+  margin-top: 98px;
+}
+
+.content .card__block .card__block__left__big {
+  width: 560px;
+  height: 542px;
+  background-image: url(images/card_block_left_big_bg.png);
+}
+
+.content .card__block .card__block__left__big .card__block__left__text {
+  margin-top: 26px;
+  width: 175px;
+  height: 82px;
+  background-color: #ffffff;
+}
+
+.content .card__block .card__block__left__big .card__block__left__text__content {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+  padding: 16px;
+}
+
+.content .card__block .card__block__left__big .for__men {
+  font-family: Lato;
+  font-size: 30px;
+  color: #f16d7f;
+}
+
+.content .card__block .card__block__left__small {
+  width: 560px;
+  height: 261px;
+  background-image: url(images/card_block_left_small_bg.png);
+  margin-top: 20px;
+}
+
+.content .card__block .card__block__left__small .card__block__left__small__text {
+  margin-top: 25px;
+  width: 225px;
+  height: 82px;
+  background-color: #fff;
+}
+
+.content .card__block .card__block__left__small .card__block__left__small__text__content {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+  padding: 16px;
+}
+
+.content .card__block .card__block__left__small .accesories {
+  font-size: 30px;
+  color: #f16d7f;
+}
+
+.content .card__block .card__block__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .card__block .card__block__right .card__block__right__small {
+  width: 560px;
+  height: 261px;
+  background-image: url(images/card_block_right_small_bg.png);
+  margin-top: 98px;
+  margin-left: 21px;
+}
+
+.content .card__block .card__block__right .card__block__right__small .card__block__right__small__text {
+  margin-top: 26px;
+  width: 162px;
+  height: 82px;
+  background-color: #ffffff;
+}
+
+.content .card__block .card__block__right .card__block__right__small .card__block__right__small__text__content {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+  padding: 16px;
+}
+
+.content .card__block .card__block__right .card__block__right__small .women {
+  font-size: 30px;
+  color: #f16d7f;
+}
+
+.content .card__block .card__block__right .card__block__right__big {
+  width: 560px;
+  height: 542px;
+  background-image: url(images/card_block_right_big_bg.png);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.content .card__block .card__block__right .card__block__right__big .card__block__right__big__text {
+  width: 180px;
+  height: 82px;
+  background-color: #ffffff;
+  margin-top: 27px;
+}
+
+.content .card__block .card__block__right .card__block__right__big .card__block__right__big__text__content {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+  padding: 16px;
+}
+
+.content .card__block .card__block__right .card__block__right__big .for__kids {
+  font-size: 30px;
+  color: #f16d7f;
+}
+/*# sourceMappingURL=style.css.map */
