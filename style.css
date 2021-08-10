@@ -4,15 +4,6 @@
   outline: none;
 }
 
-.body {
-  max-width: 1600px;
-}
-
-.container {
-  max-width: 1600px;
-  min-width: 1600px;
-}
-
 .header .top__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,7 +174,7 @@
   height: 665px;
   background-image: url(images/brand_banner_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #e8e8e8;
 }
 
 .content .brand__banner .brand__banner__text {
@@ -236,6 +227,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1600px;
 }
 
 .content .card__block .card__block__left {
@@ -462,13 +457,18 @@
 
 .content .browse__all__products {
   margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content .browse__all__products .browsebtn {
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
-  margin-left: 694px;
   border: none;
 }
 
@@ -481,10 +481,14 @@
 
 .content .info__banner {
   margin-top: 115px;
-  margin-left: 230px;
+  margin-left: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1600px;
 }
 
 .content .info__banner .discount__info {
@@ -627,9 +631,13 @@
   display: flex;
   background-image: url(images/subscribe_review_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
   height: 435px;
   margin-top: 97px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #f2f2f2;
 }
 
 .footer .review {
@@ -642,7 +650,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 110px;
-  margin-left: 240px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .review .review__figure .figure__text {
@@ -686,10 +696,6 @@
           justify-content: center;
 }
 
-.footer .subscribe .subscribe__info {
-  margin-left: 145px;
-}
-
 .footer .subscribe .subscribe__heading {
   text-align: center;
   font-size: 24px;
@@ -713,7 +719,6 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 35px;
-  margin-left: 90px;
   height: 45px;
 }
 

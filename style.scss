@@ -5,11 +5,11 @@
 }
 
 .body {
-    max-width: 1600px;
+    // max-width: 1600px;
 }
 .container {
-    max-width: 1600px;
-    min-width: 1600px;
+    // width: 1600px;
+    // min-width: 1140px;
 }
 
 .header {
@@ -148,7 +148,9 @@
         height: 665px;
         background-image: url(images/brand_banner_bg.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        // background-size: cover;
+        // width: 1600px;
+        background-color: #e8e8e8;
         .brand__banner__text {
             display: flex;
             margin-left: 230px;
@@ -186,6 +188,8 @@
     }
     .card__block {
         display: flex;
+        justify-content: center;
+        width: 1600px;
         .card__block__left {
             display: flex;
             flex-direction: column;
@@ -363,11 +367,14 @@
     }
     .browse__all__products {
         margin-top: 140px;
+        display: flex;
+        justify-content: center;
+        // width: 1600px;
         .browsebtn {
             width: 212px;
             height: 48px;
             background-color: #f16d7f;
-            margin-left: 694px;
+            // margin-left: 694px;
             border: none;
         }
         .browsebtn__text {
@@ -379,8 +386,10 @@
     }
     .info__banner {
         margin-top: 115px;
-        margin-left: 230px;
+        margin-left: 115px;
         display: flex;
+        justify-content: center;
+        width: 1600px;
         .discount__info{
             background-image: url(images/discount_info_bg.png);
             background-repeat: no-repeat;
@@ -494,9 +503,12 @@
         display: flex;
         background-image: url(images/subscribe_review_bg.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-position: center;
         height: 435px;
         margin-top: 97px;
+        justify-content: space-evenly;
+        background-color: #f2f2f2;
+        // filter: opacity(50%);
     }
     .review{
         width: 800px;
@@ -504,7 +516,8 @@
         .review__figure {
             display: flex;
             margin-top: 110px;
-            margin-left: 240px;
+            // margin-left: 240px;
+            justify-content: center;
             .figure__text {
                 margin-left: 28px;
                 margin-right: 70px;
@@ -537,7 +550,7 @@
         flex-direction: column;
         justify-content: center;
         .subscribe__info {
-            margin-left: 145px;
+            // margin-left: 145px;
         }
         .subscribe__heading {
             text-align: center;
@@ -558,7 +571,7 @@
         .subscribe__form {
             display: flex;
             margin-top: 35px;
-            margin-left: 90px;
+            // margin-left: 90px;
             height: 45px;
             .subscribe__input {
                 width: 335px;
