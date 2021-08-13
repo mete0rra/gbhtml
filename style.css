@@ -328,7 +328,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1600px;
+  margin: 0 auto;
 }
 
 .content .card__block .card__block__left {
@@ -339,7 +339,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 230px;
   margin-top: 98px;
 }
 
@@ -639,14 +638,12 @@
 
 .content .info__banner {
   margin-top: 115px;
-  margin-left: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1600px;
 }
 
 .content .info__banner .discount__info {
@@ -898,6 +895,7 @@
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+  border: 0px;
 }
 
 .footer .footer__info {
@@ -1068,5 +1066,41 @@
 
 .footer .footer__info .useful__info .shop__category .shop__category__list .shop__category__link:hover {
   color: #f16d7f;
+}
+
+.rights__socials {
+  margin-top: 95px;
+  height: 80px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rights__socials .rights {
+  color: #7a7a7a;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: right;
+}
+
+.rights__socials .fab {
+  padding: 10px;
+  background-color: #fff;
+  color: #b2b2b2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.rights__socials .fab:hover {
+  background-color: #f16d7f;
+  color: #f7f7f8;
 }
 /*# sourceMappingURL=style.css.map */

@@ -260,11 +260,12 @@
     .card__block {
         display: flex;
         justify-content: center;
-        width: 1600px;
+        // width: 1600px;
+        margin: 0 auto;
         .card__block__left {
             display: flex;
             flex-direction: column;
-            margin-left: 230px;
+            // margin-left: 230px;
             margin-top: 98px;;
         }
         .card__block__left__big {
@@ -500,10 +501,11 @@
     }
     .info__banner {
         margin-top: 115px;
-        margin-left: 115px;
+        // margin-left: 115px;
         display: flex;
         justify-content: center;
-        width: 1600px;
+        // width: 1600px;
+        // margin: 0 auto;
         .discount__info{
             background-image: url(images/discount_info_bg.png);
             background-repeat: no-repeat;
@@ -706,6 +708,7 @@
                 font-weight: 400;
                 // line-height: 54px;
                 text-align: center;
+                border: 0px;
             }
         }
     }
@@ -823,5 +826,32 @@
                 }
             }
         }
+    }
+}
+.rights__socials {
+    margin-top: 95px;
+    height: 80px;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .rights {
+        color: #7a7a7a;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 42px;
+        text-align: right;
+    }
+    .fab {
+        padding: 10px;
+        background-color: #fff;
+        color: #b2b2b2;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .fab:hover {
+        background-color: #f16d7f;
+        color: #f7f7f8;;
     }
 }
