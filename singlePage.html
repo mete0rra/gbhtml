@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/14f4329ea9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/14f4329ea9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
-        <div class="container">
+        <div class="container__header">
             <div class="top__info">
                 <div class="logo__search">
                     <a href="index.html"><img src="images/top_logo.png" alt="top_logo"></a>
@@ -303,12 +304,135 @@
         </div>
     </nav>
     <div class="content">
-        <div class="container">
-            
+        <div class="container__content">
+            <div class="item__block">
+                <div class="item__breadcrumb">
+                    <div class="item__header">New Arrivals</div>
+                    <div class="breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a class="breadcrumb__item__link" href="index.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">New Arrivals</li>
+                            </ol>
+                          </nav>
+                    </div>
+                </div>
+                <div class="item__img__sp">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/sp_item.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev carousel__btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next carousel__btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="item__desc">
+                    <div class="item__desc__header">WOMEN COLLECTION</div>
+                    <div class="item__desc__heading">Moschino Cheap And Chic</div>
+                    <div class="item__desc__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+                        <div class="item__desc__matDes">
+                            <div class="item__desc__material">MATERIAL: <span class="material">COTTON</span></div>
+                            <div class="item__desc__designer">DESIGNER: <span class="designer">BINBURHAN</span></div>
+                        </div>
+                        <div class="item__desc__price">$561</div>
+                    </div>
+                    <form class="item__specs">
+                        <div class="item__specs__type">
+                            <div class="item__specs__color">CHOOSE COLOR
+                                <input class="item__specs__input__color" type="text" placeholder="Red">
+                            </div>
+                            <div class="item__specs__size">CHOOSE SIZE
+                                <input class="item__specs__input__size" type="text" placeholder="XXL">
+                            </div>
+                            <div class="item__specs__quantity">QUANTITY
+                                <input class="item__specs__input__quantity" type="number">
+                            </div>
+                        </div>
+                        <button class="item__specs__buy" type="submit">
+                            <a class="item__specs__cart" href=""><img src="images/add_cart_sp.svg" alt="cart_button"></a>Add To Cart
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="items__suggestions">
+                <div class="featured__items">
+                    <div class="suggestions__items__header">you may like also</div>
+                    <div class="featured__items__top">
+                        <div class="featured__items__card">
+                            <a class="featured__items__link" href=""><img class="item__img" src="images/feature_items_top_card_1.png" alt="featured_items_top_card_1">
+                            <div class="txt__box">
+                                <h3 class="featured__items__text">Mango  People  T-shirt</h3>
+                                <p class="featured__items__price">$52.00</p>
+                            </div>
+                            </a>
+                            <div class="add__box">
+                                <a class="featured__items__buy" href="#">
+                                    <img src="images/add_cart.svg" alt="cart">
+                                    <p class="add__text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured__items__card"><a class="featured__items__link" href=""><img class="item__img" src="images/feature_items_top_card_2.png" alt="featured_items_top_card_2">
+                            <div class="txt__box">
+                                <h3 class="featured__items__text">Mango  People  T-shirt</h3>
+                                <p class="featured__items__price">$52.00</p>
+                            </div>
+                            </a>
+                            <div class="add__box">
+                                <a class="featured__items__buy" href="#">
+                                    <img src="images/add_cart.svg" alt="cart">
+                                    <p class="add__text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured__items__card"><a class="featured__items__link" href=""><img class="item__img" src="images/feature_items_top_card_3.png" alt="featured_items_top_card_3">
+                            <div class="txt__box">
+                                <h3 class="featured__items__text">Mango  People  T-shirt</h3>
+                                <p class="featured__items__price">$52.00</p>
+                            </div>
+                            </a>
+                            <div class="add__box">
+                                <a class="featured__items__buy" href="#">
+                                    <img src="images/add_cart.svg" alt="cart">
+                                    <p class="add__text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured__items__card"><a class="featured__items__link" href=""><img class="item__img" src="images/feature_items_top_card_4.png" alt="featured_items_top_card_4">
+                            <div class="txt__box">
+                                <h3 class="featured__items__text">Mango  People  T-shirt</h3>
+                                <p class="featured__items__price">$52.00</p>
+                            </div>
+                            </a>
+                            <div class="add__box">
+                                <a class="featured__items__buy" href="#">
+                                    <img src="images/add_cart.svg" alt="cart">
+                                    <p class="add__text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
-        <div class="container">
+        <div class="container__footer">
             <div class="subscribe__review">
                 <div class="review">
                     <figure class="review__figure">
