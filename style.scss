@@ -71,7 +71,7 @@
                     width: 200%;
                     text-align: left;
                     padding: 15px;
-                    top: 37px;
+                    top: 33px;
                     z-index: 10000;
                     .browse__button__heading {
                         font-family: Lato;
@@ -139,7 +139,7 @@
         .cart {
             width: 32px;
             height: 29px;
-            padding-right: 26px;
+            padding-right: 60px;
         }
         .acc__menu {
             margin-right: 230px;
@@ -709,6 +709,7 @@
                 font-weight: 300;
                 text-transform: uppercase;
                 color: #636363;
+                @include transition();
             }
             .active {
                 font-family: Lato;
@@ -893,6 +894,266 @@
         text-transform: uppercase;
         color: #4d4d4d;
         text-align: center;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        .details__info {
+            width: 55%;
+            margin: 0 auto;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .summary {
+            list-style-type: none;
+            font-family: Lato;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #222222;
+            padding-bottom: 40px;
+            margin-top: 30px;
+            @include transition;
+        }
+        .summary:hover {
+            color: #f16d7f;
+        }
+    }
+    .checkout__box {
+        display: flex;
+        //justify-content: space-between;
+        padding-left: 35px;
+        padding-bottom: 80px;
+        .shipping__address__header {
+            display: flex;
+            flex-direction: column;
+        }
+        .shipping_address__heading {
+            font-family: Lato;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #222222;
+            padding-bottom: 15px;
+        }
+        .shipping__address__header__text {
+            font-family: Lato;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #b3b2b2;
+            padding-bottom: 15px;
+        }
+        .shipping__address__info__heading {
+            font-family: Lato;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #222222;
+            margin-top: 15px;
+        }
+        .shipping__address__info__text {
+            font-family: Lato;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #b3b2b2;
+            margin-top: 10px;
+        }
+        .checkout__type {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkout__as__guest {
+            display: flex;
+            padding-bottom: 10px;
+            .checkout__as__guest__text {
+                padding-left: 15px;
+                font-family: Lato;
+                font-size: 12px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #222222;
+            }
+        }
+        .checkout__register {
+            display: flex;
+            padding-bottom: 10px;
+            .checkout__register__text {
+                padding-left: 15px;
+                font-family: Lato;
+                font-size: 12px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #222222;
+            }
+        }
+        .fa-angle-double-right {
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .auth__prefs {
+            margin-top: 15px;
+            .auth__prefs__info {
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+            }
+            .auth__prefs__text {
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #b3b2b2;
+                padding-left: 5px;
+            }
+        }
+        .submit__btn {
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            @include transition;
+            .submit__btn__confirm {
+                text-decoration: none;
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #4a4a4a;
+                @include transition;
+            }
+        }
+        .submit__btn:hover {
+            background-color: #f16d7f;
+        }
+        .submit__btn:hover .submit__btn__confirm {
+            color: #FFFFFF;
+        }
+    }
+    .login__form {
+        margin-left: 25%;
+        .login__form__info {
+            .login__form__info__heading {
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #222222;
+            }
+            .login__form__info__text {
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #b3b2b2;
+                margin-top: 5px;
+            }
+        }
+        .login__form__info__email {
+            .login__form__email__text {
+                font-family: Lato;
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 700;
+                color: #222222;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            .login__form__email__\* {
+                font-family: Lato;
+                font-size: 17px;
+                line-height: 20px;
+                font-weight: 4400;
+                color: #ff0d0d;
+            }
+        }
+        .login__form__info__password {
+            .login__form__password__text {
+                font-family: Lato;
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 700;
+                color: #222222;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            .login__form__password__\* {
+                font-family: Lato;
+                font-size: 17px;
+                line-height: 20px;
+                font-weight: 4400;
+                color: #ff0d0d;
+            }
+        }
+        .login__form__input {
+            height: 45px;
+            width: 150%;
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            padding-left: 5px;
+        }
+        .login__form__required__fields {
+            color: red;
+            margin-top: 10px;
+        }
+        .submit__btn__box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 35px;
+            width: 200%;
+            .submit__btn__login {
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include transition;
+                width: 60%;
+            }
+            .submit__btn__link {
+                text-decoration: none;
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #4a4a4a;
+                @include transition;
+            }
+        }
+        .submit__btn__login:hover {
+            background-color: #f16d7f;
+        }
+        .submit__btn__login:hover .submit__btn__link {
+            color: #FFFFFF;
+        }
+        .forgot__password {
+            .forgot__password__link {
+                text-decoration: none;
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #222222;
+                @include transition;
+            }
+        }
+        .forgot__password:hover .forgot__password__link {
+            color: #f16d7f;
+        }
     }
 }
 .footer {
