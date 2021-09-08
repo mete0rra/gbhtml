@@ -1480,6 +1480,160 @@ $colorPink: #f16d7f;
             color: #FFFFFF;
         }
     }
+    .product {
+        display: flex;
+        margin-left: 20%;
+        //justify-content: space-between;
+        margin-top: 70px;
+        &__filter {
+            display: flex;
+            justify-content: space-between;
+            //width: 53%;
+            &__trend {
+                padding-left: 10%;
+                &__heading {
+                    font-family: Lato;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #6f6e6e;
+                }
+                &__text__box {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top: 25px;
+                }
+                &__text {
+                    font-family: Lato;
+                    font-size: 14px;
+                    //line-height: 26px;
+                    font-weight: 400;
+                    color: #6f6e6e;
+                    border-right: 1px solid #dfdfdf;
+                    padding: 0 15px 0 5px;
+                    @include transition;
+                }
+                &__text:last-child {
+                    border: none;
+                }
+                &__text:hover {
+                    color: $colorPink;
+                }
+            }
+            &__size {
+                padding-left: 10%;
+                &__heading {
+                    font-family: Lato;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #6f6e6e;
+                }
+                &__checkbox {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top: 25px;
+                    &__item {
+                        padding-left: 5px;
+                    }
+                    &__label {
+                        padding-left: 5px;
+                        font-family: Lato;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #6f6e6e;
+                    }
+                }
+            }
+            &__price {
+                padding-left: 10%;
+                &__heading {
+                    font-family: Lato;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #6f6e6e;
+                }
+                &__range {
+                    margin-top: 25px;
+                    &__minmax {
+                        display: flex;
+                        justify-content: space-between;
+                        font-family: Lato;
+                        font-size: 14px;
+                        line-height: 26px;
+                        font-weight: 400;
+                        color: #6f6e6e;
+                    }
+                }
+            }
+            &__sort {
+                margin-top: 45px;
+                margin-left: 10%;
+                &__name {
+                    display: flex;
+                    width: 17%;
+                    height: 30px;
+                    background-color: #ffffff;
+                    border: 1px solid #ebebeb;
+                    &__text {
+                        background-color: #ffffff;
+                        border: 1px solid #ebebeb;
+                    }
+                }
+            }
+        }
+        &__box {
+            margin-left: 10%;
+        }
+        &__category {
+            display: flex;
+            flex-direction: column;
+            &__list {
+                margin-bottom: 20px;
+                &__heading {
+                    border-left: 5px solid $colorPink;
+                    padding-left: 15px;
+                    height: 40px;
+                    font-family: Lato;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: black;
+                    list-style-type: none;
+                    align-items: center;
+                    display: flex;
+                    @include transition;
+                    border-bottom: 1px solid #ebebeb;
+                    width: 150%;
+                }
+                &__heading:hover {
+                    color: $colorPink;
+                }
+                &__text {
+                    padding-left: 15px;
+                    margin-top: 15px;
+                    font-family: Lato;
+                    font-size: 14px;
+                    line-height: 33px;
+                    font-weight: 400;
+                    color: #6f6e6e;
+                    @include transition;
+                }
+                &__text:hover {
+                    color: $colorPink;
+                }
+            }
+        }
+    }
 }
 .footer {
     .subscribe__review {
